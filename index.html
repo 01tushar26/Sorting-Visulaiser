@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Sorting Visualizer</h1>
+    
+    <div class="controls">
+        <button id="generate">Generate Array</button>
+        <button id="sort">Sort</button>
+        <button id="stop">Stop</button>
+        <button id="mute">Mute</button> <!-- New Mute Button -->
+        <select id="algorithm">
+            <option value="bubble">Bubble Sort</option>
+            <option value="selection">Selection Sort</option>
+        </select>
+    </div>
+    
+    
+    <div id="complexity">
+        <p><strong>Time Complexity:</strong> <span id="time-complexity">N/A</span></p>
+        <p><strong>Space Complexity:</strong> <span id="space-complexity">N/A</span></p>
+    </div>
+    <div id="array-container"></div>
+    <script src="scripts.js"></script>
+</body>
+</html>
